@@ -1,1 +1,2 @@
+#!/bin/bash
 curl -X GET "http://80.208.226.84:1800/app/api/Scan/StartScan/62f7ddd3261d671f655a76d2" -H  "accept: */*" -H  "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjYyMjQ5NDZlMTQxM2VhMWQxZjU4NTA2MCIsIlVzZXJuYW1lIjoic3llZCIsInJvbGUiOiJBZG1pbiIsIkppcmFBdXRoZW50aWNhdGVkIjoiZmFsc2UiLCJuYmYiOjE2NjA0OTQ5OTEsImV4cCI6MTY2MDkyNjk5MSwiaWF0IjoxNjYwNDk0OTkxfQ.FaSdpFyF7su0gn9yXV4RGu9uFNbDGkuLX49poLVRLkE"
