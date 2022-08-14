@@ -20,3 +20,8 @@ inputs:
      -${{ inputs.server-url }}
      -${{ inputs.authentication-token }}
      -${{ inputs.project-id }}
+
+    env:
+      SERVERURL: "${{ inputs.server-url }}"
+      TOKEN: "${{ inputs.authentication-token }}"
+      PROJECTID: "${{ inputs.project-id }}"
