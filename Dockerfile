@@ -1,4 +1,4 @@
 From ubuntu
-COPY scanrun.sh scanrun.sh
-RUN chmod +x scanrun.sh
-ENTRYPOINT ["scanrun.sh"]
+COPY scanrun.sh /app/scanrun.sh
+RUN chmod +x /app/scanrun.sh
+ENTRYPOINT ["/app/scanrun.sh"]
