@@ -1,0 +1,22 @@
+name: 'Test Scan Action'
+description: 'Trigger the scan'
+inputs:
+  server-url:
+    description: URL of the scan api
+    required: true
+    default: 'http://80.208.226.84:1800/app/api/Scan/StartScan/'
+  authentication-token:
+    description: Authentication Token
+    required: true
+    default: 'aaaaabbbbbbcccccccc'
+  project-id:
+    description: Project Id to be scanned
+    required: true
+    default: '62f7ddd3261d671f655a76d2'
+  runs:
+    using: 'docker'
+    image: 'Dockerfile' 
+    args:
+     -${{ inputs.server-url }}
+     -${{ inputs.authentication-token }}
+     -${{ inputs.project-id }}
