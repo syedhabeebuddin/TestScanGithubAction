@@ -1,0 +1,19 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Test Scan Job
+
+on: [push]
+
+jobs:
+ test_scan_job:
+  runs-on: ubuntu-latest
+  name: A job to scan code
+  steps:
+   - name: Checkout
+     uses: actions/checkout@v3
+   - name: test scan action step
+     uses: ./
+     with: 
+        server-url: 'http://80.208.226.84:1800/app/api/Scan/StartScan'
+        authentication-token: 'aaa'
+        project-id: '62f7ddd3261d671f655a76d2'
