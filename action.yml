@@ -13,7 +13,8 @@ inputs:
     description: Project Id to be scanned
     required: true
     default: '62f7ddd3261d671f655a76d2'
-  runs:
+
+runs:
     using: 'docker'
     image: 'Dockerfile' 
     # args:
